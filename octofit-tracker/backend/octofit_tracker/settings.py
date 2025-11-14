@@ -175,3 +175,10 @@ CORS_ALLOW_CREDENTIALS = True
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_REQUIRED = False
+
+# REST Auth settings
+REST_AUTH = {
+    'USE_JWT': False,
+    'SESSION_LOGIN': True,
+    'TOKEN_MODEL': 'rest_framework.authtoken.models.Token',
+}
